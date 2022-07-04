@@ -264,7 +264,7 @@ def setNodeData(node, is_border):
 def setRenderSettings(samples = 1, denoising = False, freestyle = False, diffuse_override = False, emission_override = False, is_border = False, use_compositor = False):
     #shorthands
     scene = bpy.data.scenes["Scene"]
-    viewLayer = scene.view_layers["ViewLayer"]
+    viewLayer = scene.view_layers["View Layer"]
     #basic settings
     scene.cycles.samples = samples
     scene.cycles.use_denoising = denoising
